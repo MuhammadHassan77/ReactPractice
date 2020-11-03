@@ -16,7 +16,7 @@ function App() {
       {/* <header className="App-header"> */}
         <div className="row">
           {/* <AppRouter /> */}
-          <AzanCalendar/>
+          <AzanCalendar  mon={1} />
           {/* <Calculator />
            <Todo />            */}
         </div>
