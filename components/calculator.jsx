@@ -15,7 +15,8 @@ export default class Calculator extends React.Component {
         var result, exp;
 
         var showValue = document.getElementById("showValue");
-        console.log(showValue.value += e.target.value);
+        // console.log();
+        showValue.value += e.target.value
         exp = showValue.value;
 
         if (e.target.value === "=" && exp !== "") {
@@ -39,14 +40,14 @@ export default class Calculator extends React.Component {
     // }
     render() {
         return (
-            <div>
-                <button onClick={() => this.props.history.push('/todo.jsx')} > Go to Todo</button>
-                <div style={{ textAlign: "center", border: "1px solid lightblue" }} className="px-3">
-                    <h1>Calculator</h1>
-                    <input className="form-control" type="text" id="showValue" pattern="" />
-                    <button className="btn btn-secondary my-1" value="X" style={{ width: "45%" }}
+            <div className="col-lg-4 offset-lg-4 py-5">
+                {/* <button onClick={() => this.props.history.push('/todo.jsx')} > Go to Todo</button> */}
+                <div style={{ textAlign: "center", border: "1px solid lightblue" }} className="px-3 py-5">
+                    <h1 className="text-primary">Calculator</h1>
+                    <input className="form-control col-lg-10 offset-lg-1 my-3" type="text" id="showValue" pattern="" />
+                    <button className="btn btn-secondary my-1 col-lg-4" value="X" style={{ width: "45%" }}
                         onClick={() => this.ersValue()}>X</button>
-                    <button className="btn btn-danger my-1 ml-3" style={{ width: "45%" }}
+                    <button className="btn btn-danger my-1 col-lg-4 ml-3" style={{ width: "45%" }}
                         onClick={() => this.clrValue()}>C</button>
                     <div>
                         <button className="btn btn-primary mx-1 my-1" value="7"
@@ -89,7 +90,7 @@ export default class Calculator extends React.Component {
                             onClick={(e) => this.getValue(e)}>-</button>
                     </div>
                 </div>
-            </div >
+            </div>
         )
     }
 }
