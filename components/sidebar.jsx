@@ -210,7 +210,8 @@ export default function Sidebar() {
               <Card.Text>This is a responsive sidebar template with dropdown menu based on bootstrap 4 framework.
                 <br />
                 <br />
-              You can find the complete code on <a href="https://www.github.com">Github</a> , it contains more themes and background image option
+              You can find the complete code on <a href="https://github.com/MuhammadHassan77/ReactPractice/blob/main/components/sidebar.jsx" target="_blank">
+                  Github</a> , it contains more themes and background image option
               </Card.Text>
             </Card.Body>
             <Card.Footer>
@@ -231,12 +232,12 @@ export default function Sidebar() {
               <Badge>617</Badge>
             </p>
             <div className="d-flex">
-              <a href="/" className="col-1 mx-1">
+              <a href="https://github.com/MuhammadHassan77/ReactPractice/blob/main/components/sidebar.jsx" target="_blank" className="col-1 mx-1">
                 <Button className="pl-1" variant="primary">
                   Github
               </Button>
               </a>
-              <a href="/" className="col-1 mx-1">
+              <a href="https://github.com/MuhammadHassan77/ReactPractice/blob/main/components/sidebar.jsx" target="_blank" className="col-1 mx-1">
                 <Button className="pl-2" variant="success">
                   Demo
               </Button>
