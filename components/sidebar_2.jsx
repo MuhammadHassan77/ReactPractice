@@ -19,8 +19,8 @@ export default function Sidebar2() {
     }
 
     let sidebarToggler = () => {
-        $(".sidebar").toggleClass("col-md-1 col-md-3");
-        $(".mainDiv").toggleClass("col-md-11 col-md-9");
+        $(".sidebar").toggleClass("col-md-1 col-md-2");
+        $(".mainDiv").toggleClass("col-md-11 col-md-10");
         $(".toggleName").toggleClass("d-inline d-none");
         $(".fa-chevron-right").toggleClass("d-inline d-none");
         $(".uncollapsedLink").toggleClass("d-none d-block");
@@ -35,7 +35,7 @@ export default function Sidebar2() {
     return (
         <div className="container-fluid">
             <div className="row">
-                <div className="col-md-3 sidebar bg-dark overflow-auto" style={{ height: "100%", zIndex: 11 }}>
+                <div className="col-md-2 sidebar bg-dark overflow-auto" style={{ height: "100%", zIndex: 11 }}>
 
                     <img src={bgImg} alt="bg-img" className="myBgImg img-fluid"
                         style={{ height: "100%", objectFit: 'cover', objectPosition: 'center', position: 'absolute', opacity: .3, left: 0, top: 0, }} />
@@ -132,17 +132,19 @@ export default function Sidebar2() {
                         <Card.Footer className="pl-md-0">
                             <a href="https://github.com/MuhammadHassan77/ReactPractice/blob/main/components/sidebar_2.jsx"
                                 className="btn rounded-pill text-muted my-2 uncollapsedLink mx-auto d-block w-75" style={{ background: "hsla(0,0%,100%,.05)", border: "1px solid rgb(181 183 184)" }}>
-                                <i className="fa fa-github text-white mr-1"></i> <span> View Source </span>
+                                <i className="fa fa-github text-white mr-1"></i>
+                                <span style={{ fontSize: "13px", color: "white" }}> View Source </span>
                             </a>
                             <a href="https://github.com/MuhammadHassan77/ReactPractice/blob/main/components/sidebar_2.jsx"
                                 className="text-muted my-3 collapsedLink d-none mt-5">
-                                <i className="fa fa-github text-white ml-2"></i> <span className="toggleName d-inline"> View Source </span>
+                                <i className="fa fa-github text-white ml-2"></i>
+                                <span className="toggleName d-inline" > View Source </span>
                             </a>
                         </Card.Footer>
                     </Card>
                 </div>
 
-                <div className="col-md-9 px-5 overflow-auto mainDiv" style={{ height: "100%" }}>
+                <div className="col-md-10 px-5 overflow-auto mainDiv" style={{ height: "100%" }}>
                     <Card>
                         <Card.Header as="h1">
                             <i className="fab fa-react text-info"></i> React Pro Sidebar
